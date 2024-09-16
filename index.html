@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="icon" href="./index_files/lab_logo.png">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="AutonoML Tutorial.">
+    <link rel="apple-touch-icon" href="./index_files/lab_logo.png">
+    <meta property="og:description" content="The University of Technology Sydney &amp; Complex Adaptive Systems Lab and The ARC Digital Bioprocess Development Hub.">
+    <meta property="og:url" content="https://github.com/UTS-CASLab">
+    <link rel="manifest" href="#">
+    <title>AutonoML and Human Roles (AJCAI 2024)</title>
+    <link href="./index_files/main.css" rel="stylesheet">
+    <style type="text/css">
+      .force-graph-container canvas {
+        display: block;
+        user-select: none;
+        outline: none;
+        -webkit-tap-highlight-color: transparent;
+      }
+
+      .force-graph-container .graph-tooltip {
+        position: absolute;
+        top: 0;
+        transform: translate(-50%, 25px);
+        font-family: sans-serif;
+        font-size: 16px;
+        padding: 4px;
+        border-radius: 3px;
+        color: #eee;
+        background: rgba(0,0,0,0.65);
+        visibility: hidden; /* by default */
+      }
+
+      .force-graph-container .clickable {
+        cursor: pointer;
+      }
+
+      .force-graph-container .grabbable {
+        cursor: move;
+        cursor: grab;
+        cursor: -moz-grab;
+        cursor: -webkit-grab;
+      }
+
+      .force-graph-container .grabbable:active {
+        cursor: grabbing;
+        cursor: -moz-grabbing;
+        cursor: -webkit-grabbing;
+      }
+
+      .justified-text {
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root">
+    <header class="header">
+      <div class="container flex-container flex-align-center justify-space-between">
+        <div class="header-left flex-container flex-align-center">
+          <ul class="header-nav">
+            <li><a href="#abstract">Abstract </a></li>
+            <li><a href="#outline">Outline </a></li>
+            <li><a href="#audience">Target Audience</a></li>
+            <li><a href="#materials">Materials</a></li>
+            <li><a href="#venue">Venue</a></li>
+            <li><a href="#speakers">Speakers</a></li>
+          </ul>
+        </div>
+        <div class="header-right flex-container flex-align-center">
+          <div class="logo-group">
+            <a href="https://digitalbioprocesshub.org.au/">
+              <div class="logo hub-logo"><img src="./index_files/dbd_hub_logo.jpg" alt="ARC DBD Hub Logo">
+              </div>
+            </a>
+            <a href="https://www.uts.edu.au/" target="_blank" rel="noreferrer">
+              <div class="logo"><img src="./index_files/uts_logo.png" class="App-logo" alt="UTS logo"></div>
+            </a>
+            <a href="https://github.com/UTS-CASLab">
+              <div class="logo center-logo"><img src="./index_files/lab_logo.png" alt="UTS-CAS Logo"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="hero" class="flex-container  flex-align-end ">
+      <div class="hero-background"></div>
+      <div class="container flex-container flex-align-center ">
+        <div class="hero-text">
+          <h2><span class="highlight">Towards Autonomous Machine Learning:</span><br> Evolution of AutoML, Roles Of Humans, and Related Topics</h2>
+          <div class="ajcai-bit">
+            <div class="flex-item">
+              <div class="logo-group">
+                <h3>Tutorial at AJCAI 2024</h3>
+                <a href="https://ajcai2024.org/index.html" target="_blank" rel="noreferrer">
+                  <div class="logo hub-logo">
+                    <img src="./index_files/ai_2024_logo.jpg" alt="AJCAI 2024" class="logo-group">
+                  </div>
+                </a>
+              </div>
+              <h4>Monday 25 November 2024, AB am - CD pm AEST<br>Room: Melbourne, Australia</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="hero-graph-wrapper">
+        <div>
+          <div class="force-graph-container" style="position: relative;">
+            <canvas width="3020" height="800" style="width: 1510px; height: 400px;"></canvas>
+            <div class="graph-tooltip"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main id="main" class="container">
+      <section id="abstract">
+        <h2>Abstract</h2>
+        <p class="justified-text">
+          Recent years have seen an unprecedented level of technological uptake and engagement by the mainstream. From deepfakes for memes to recommendation systems for 
+          commerce, machine learning (ML) has become a regular fixture in society. This ongoing transition from purely academic confines to the general public is not 
+          smooth as the public does not have the extensive expertise in data science required to fully exploit the capabilities of ML. As automated machine learning 
+          (AutoML) systems continue to progress in both sophistication and performance, it becomes important to understand the 'how' and 'why' of human-computer 
+          interaction (HCI) within these frameworks. This is necessary for optimal system design and leveraging advanced data-processing capabilities to support 
+          decision-making involving humans. It is also key to identifying the opportunities and risks presented by ever-increasing levels of machine autonomy.
+          <br>
+          This tutorial provides an expansive perspective on what constitutes an automated/autonomous ML system and how humans interact with such systems. The authors 
+          also focus on the following questions: (i) What does HCI currently look like for state-of-the-art AutoML algorithms? (ii) Do the expectations of HCI within 
+          AutoML frameworks vary for different types of users and stakeholders? (iii) How can HCI be managed so that AutoML solutions acquire human trust and broad 
+          acceptance? (iv) As AutoML systems become more autonomous and capable of learning from complex open-ended environments, will the fundamental nature of HCI 
+          evolve? To consider these questions, the authors project existing literature in HCI into the space of AutoML and review topics such as user-interface design, 
+          human-bias mitigation, and trust in artificial intelligence (AI). Additionally, to rigorously gauge the future of HCI, they contemplate how AutoML may manifest 
+          in effectively open-ended environments. Ultimately, this tutorial serves to identify key research directions aimed at better facilitating the roles and modes of 
+          human interactions with both current and future AutoML systems.
+        </p>
+      </section>
+      <section id="outline">
+        <h2>Tutorial Outline</h2>
+        <h3><b style="color: red;">Goals:</b> The main goal of this tutorial is to provide the audiences with an overview of how AutoML systems evolve to become steadily more autonomous over 
+          time, as well as the roles and modes of human interactions with such AutoML/AutonoML systems.</h3>
+        <ol class="tutorial-outline">
+          <li><b>Introduction to AutoML, AutonoML, and related topics</b> (35 mins)
+            <ul>
+              <li>Existing challenges of data science (5 mins)</li>
+              <li>ML workflow and the need for AutoML and Autonomous ML systems (10 mins)</li>
+              <li>Fundamental components of AutoML and AutonoML systems (10 mins)</li>
+              <li>AutoML Toolboxes (5 mins)</li>
+              <li>Questions (5 mins)</li>
+            </ul>
+          </li>
+          <li>
+            <b>Interacting with AutoML Systems: Current Practices</b> (45 mins)
+            <ul>
+              <li>Types of stakeholders (5 mins)</li>
+              <li>Roles and Modes within the machine learning workflow (10 mins)</li>
+              <li>The user unterface: Many modalities (5 mins)</li>
+              <li>Improving the outcomes of interactions (10 mins)</li>
+              <li>The user interface: Key requirements (5 mins)</li>
+              <li>Questions (5 mins)</li>
+              <li>Break (5 mins)</li>
+            </ul>
+          </li>
+          <li>
+            <b>Interacting with AutoML Systems: Constrained but Fully Automated</b> (35 mins)
+            <ul>
+              <li>An introduction to AutonoML systems and their fundemental components (15 mins)</li>
+              <li>A solution for building constrained but fully automated systems: (5 mins)</li>
+              <li>Roles and Modes when human involvement is no longer required (8 mins)</li>
+              <li>What lies beyond the Constraints (2 mins)</li>
+              <li>Questions (5 mins)</li>
+            </ul>
+          </li>
+          <li>
+            <b>Interacting with AutoML Systems: Open-ended Environments</b> (40 mins)
+            <ul>
+              <li>The challenges of learning in an open world (5 mins)</li>
+              <li>One possible future: AutonoML and reasoning (15 mins)</li>
+              <li>Roles and Modes in relation to autonomous open-world systems (10 mins)</li>
+              <li>Questions (5 mins)</li>
+              <li>Break (5 mins)</li>
+            </ul>
+          </li>
+          <li>
+            <b>Critical Discussion and Future Directions</b> (30 mins)
+            <ul>
+              <li>Critical discussions (10 mins)</li>
+              <li>A case study of AutonoML in an end-to-end digital twin of bioprocesses for monoclonal antibody manufacturing (5 mins)</li>
+              <li>Potential research directions (5 mins)</li>
+              <li>Questions (5 mins)</li>
+            </ul>
+          </li>
+        </ol>
+      </section>
+      <section id="audience">
+        <h2>Target Audience</h2>
+        <p>
+          This tutorial is aimed at Machine learning researchers and developers who have experience in building AutoML solutions and are interested in exploring the 
+          potential of AutoML in improving their system building process. This tutorial is also appropriate for computer science researchers and specific domain experts 
+          in understanding how they can interact with AutoML systems and leverage them for their works. Recommended prerequisites are:
+        </p>
+        <ul>
+          <li><b>Machine Learning</b>: Understanding of classical and deep machine learning models. Knowledge of AutoML system development will be a plus, but not required.</li>
+          <li><b>Data Science</b>: Understanding of basic concepts in Data Science and Artificial Intelligence. Basic experience with human-machine interactions will be a plus.</li>
+        </ul>
+      </section>
+      <section id="materials">
+        <h2>Materials</h2>
+        <p>All of the slides and other accompanying materials are available on the <a href="https://github.com/UTS-CASLab/autonoml-tutorial" rel="noreferrer">GitHub repo</a>.</p>
+        <p>The primary content of this tutorial is drawn from our recent comprehensive review papers and monographs as follows:</p>
+        <ol>
+          <li>T. T. Khuat, D. J. Kedziora, and B. Gabrys, "<a href="http://dx.doi.org/10.1561/1100000091">The roles and modes of human interactions with
+            automated machine learning systems: A critical review and perspectives</a>," <em>Foundations and
+            Trends® in Human-Computer Interaction</em>, vol. 17, no. 3-4, pp. 195-387, 2023.</li>
+          <li>D. J. Kedziora, K. Musial, and B. Gabrys, "<a href="http://dx.doi.org/10.1561/2200000093">Autonoml: Towards an integrated framework for autonomous 
+            machine learning</a>," <em>Foundations and Trends® in Machine Learning</em>, vol. 17, no. 4, pp. 590-766, 2024.</li>
+          <li>Scriven, D. J. Kedziora, K. Musial, and B. Gabrys, "<a href="http://dx.doi.org/10.1561/2900000030">The technological emergence of automl:
+            A survey of performant software and applications in the context of industry</a>," <em>Foundations and
+            Trends® in Information Systems</em>, vol. 7, no. 1-2, pp. 1-252, 2023.</li>
+          <li>X. Dong, D. J. Kedziora, K. Musial, and B. Gabrys, "<a href="http://dx.doi.org/10.1561/2200000119">Automated deep learning: Neural architecture search is not the end</a>," 
+            <em>Foundations and Trends® in Machine Learning</em>, vol. 17, no. 5, pp. 767-920, 2024.</li>
+          <li>T. T. Khuat, R. Bassett, E. Otte, A. Grevis-James, and B. Gabrys, "<a href="https://doi.org/10.1016/j.compchemeng.2024.108585">Applications of machine learning in antibody discovery, process development, 
+            manufacturing and formulation: Current trends, challenges, and opportunities</a>," <em>Computers & Chemical Engineering</em>, vol. 182, pp. 108585, 2024</li>
+      </ol>
+      </section>
+      <section id="venue">
+        <h2>Venue</h2>
+        <p>The tutorial will be located in <b>Room</b>, Melbourne, VIC, Australia.</p>
+      </section>
+      <section id="speakers">
+        <h2>Speakers</h2>
+        <div class="flex-container flex-align-center profile">
+          <div class="flex-item"><img src="./index_files/Bogdan_Gabrys.jpg" alt="Prof. Bogdan Gabrys" class="profile-photo">
+            <div class="profile-details">
+              <h3>Prof. Bogdan Gabrys</h3>
+              <h4>Professor, UTS</h4>
+              <ul class="profile-links">
+                <li><a href="https://profiles.uts.edu.au/Bogdan.Gabrys" target="_blank" rel="noreferrer">UTS Profile</a></li>
+                <li><a href="https://scholar.google.com.au/citations?user=E1rkUpQAAAAJ&hl=en" target="_blank" rel="noreferrer">Google Scholar</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="flex-item">
+            <p class="justified-text">
+              Bogdan Gabrys is a data scientist and strategist with deep expertise in Data Science, Complex Adaptive Systems, Computational Intelligence, Machine Learning 
+              and Predictive Analytics gained from a broad range of application areas and industries. He is currently a Professor of Data Science and a Co-Director of 
+              the Complex Adaptive Systems Laboratory at the University of Technology Sydney, Sydney, Australia. Over the last 30 years, he has been working at various 
+              universities and research and development departments of commercial institutions. His research activities have concentrated on the areas of data science, 
+              complex adaptive systems, computational intelligence, machine learning, predictive analytics, and their diverse applications. He has published over 220 
+              research papers, chaired conferences, workshops, and special sessions, and been on program committees of a large number of international conferences with 
+              the data science, computational intelligence, machine learning, and data mining themes. He is frequently invited to give keynote and plenary talks at 
+              international conferences and lectures at internationally leading research centres and commercial research labs.
+            </p>
+          </div>
+        </div>
+        <div class="flex-container flex-align-center profile">
+          <div class="flex-item"><img src="./index_files/Thanh_Tung_Khuat.jpg" alt="Dr. Thanh Tung Khuat" class="profile-photo">
+            <div class="profile-details">
+              <h3>Dr. Thanh Tung Khuat</h3>
+              <h4>Research Fellow, UTS</h4>
+              <ul class="profile-links">
+                <li><a href="https://profiles.uts.edu.au/ThanhTung.Khuat" target="_blank" rel="noreferrer">UTS Profile</a></li>
+                <li><a href="https://scholar.google.com.au/citations?user=2UDpb4cAAAAJ&hl=en" target="_blank" rel="noreferrer">Google Scholar</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="flex-item">
+            <p class="justified-text">
+              Thanh Tung Khuat is now working as a Postdoctoral Research Fellow at the Complex Adaptive Systems Lab at the University of Technology Sydney (UTS), 
+              focusing on building modern explainable, transparent, and robust machine learning algorithms. He obtained a Ph.D. in Data Science in 2021 from UTS.
+              He has previously been a Senior software engineer at the FPT Software Danang, Vietnam (Jan-2018 to Jun-2018), has been a project officer at the School 
+              of Computer Science and Engineering, Nanyang Technological University, Singapore (Aug-2016 to Mar-2017).
+              Dr. Khuat is also an active reviewer for many prestigious journals and international conferences such as IEEE TNNLS, IEEE TIE, IEEE TSMC: Systems, 
+              Soft Computing, AI Review, ASE, IEEE Access, and ICONIP. He is currently a member of the IEEE, IEEE Computational Intelligence Society, and IEEE Computer 
+              Society. Khuat's research interests include machine learning, interpretable machine learning, fuzzy systems, knowledge discovery, evolutionary computation, 
+              intelligent optimization techniques, and applications in biopharmaceuticals, medicine, finance, and agriculture. He has authored and co-authored over 40 
+              peer-reviewed publications in the areas of machine learning and computational intelligence.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="acknowledgment">
+        <h2>Acknowledgment</h2>
+        <div class="flex-container flex-align-center profile">
+          <div class="flex-item acknowledgment">
+            <p class="justified-text">This tutorial is partly supported under the Australian Research Council's Industrial Transformation Research Program (ITRP) funding scheme 
+              (project number IH210100051).</p>
+            <p class="justified-text">The ARC Digital Bioprocess Development Hub is a collaboration between The University of Melbourne, University of Technology Sydney, RMIT University, 
+              CSL Innovation Pty Ltd, Cytiva (Global Life Science Solutions Australia Pty Ltd) and Patheon Biologics Australia Pty Ltd.</p>
+            <p>For more information on the Centre, please visit the website at <a href="https://digitalbioprocesshub.org.au/" target="_blank" rel="noreferrer">https://digitalbioprocesshub.org.au</a>.</p>
+          </div>
+          <div class="flex-item">
+            <a href="https://digitalbioprocesshub.org.au/" target="_blank" rel="noreferrer"><img src="./index_files/dbd_hub_logo.jpg" alt="The ARC Digital Bioprocess Development Hub" class="profile-photo acknowledgment-logo">
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container"><p>© Website by UTS-CAS Lab.</p>
+      </div>
+    </footer>
+  </div>
+  <script src="./index_files/main.js"></script>
+  </body>
+  </html>
